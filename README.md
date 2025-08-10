@@ -37,7 +37,7 @@ const {
   status,
 } = useInfiniteQuery({
   queryKey: ['items'],
-  queryFn: ({ pageParam = 1 }) => fetchPage(pageParam), // mocked fetch
+  queryFn: ({ pageParam = 1 }) => fetchPage(pageParam),
   getNextPageParam: (lastPage) => lastPage.nextPage ?? false,
 });
 ```
