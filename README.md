@@ -44,9 +44,7 @@ const {
 
 ### 2) Mocked paginated fetch
 ```ts
-// Example shape (your repo uses a local items source)
 async function fetchPage(page: number) {
-  // simulate network delay
   await new Promise(r => setTimeout(r, 300));
 
   const pageSize = 20;
